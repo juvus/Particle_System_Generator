@@ -1,0 +1,14 @@
+Particle type: Non-spherical
+Axes number: 12
+Particles number: 5000
+Number of pictures: 10
+Particles in picture: 500
+Scale, [um/pix]: 0.200
+Picture size, [pix]: 3000
+Real size, [um]: 600.000
+Picture solidity, [%]: 10.08
+Blured particles, [%]: 0
+Blured value, [%]: 0
+===== Render information =====
+Started date/time: 2020-12-24 04:43:28
+Elapsed time: 0:00:10
