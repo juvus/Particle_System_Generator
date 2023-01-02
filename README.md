@@ -1,7 +1,7 @@
 # Particle System Generator
 ## Table of contents
 
-1. [Introduction](#1. Introduction)
+1. [Introduction][## 1. Introduction]
 2. [Working principle of particle system generator](#2. Working principle of particle system generator)
 3. [Description of the software](#3. Description of the software)
 
