@@ -1,0 +1,22 @@
+To install and succesfully run the program the following should be done:
+
+1) Install anaconda environment
+https://www.anaconda.com/products/individual
+
+2) Create prts_sys_gen virtual environment:
+conda create --name prts_sys_gen
+
+3) Activate the environment:
+conda activate prts_sys_gen
+
+4) Change directory to that with program code
+cd D:\Projects\Particle_System_Generator 
+
+5) Install the python (3.7 version)
+conda install python=3.7
+
+6) Install the required libraries (listed in file requirements.txt)
+pip install -r requirements.txt
+
+7) Run the software
+python Run.py
