@@ -7,6 +7,12 @@ Modules/Generator_c/build/
 # Docx help files
 Help/*.docx
 
+# Other folders and files
+DistrData/Temp.xlsx
+Modules/Generator_c/misc/
+
+
+
 
 
 
