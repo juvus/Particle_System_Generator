@@ -1,9 +1,9 @@
 # Particle System Generator
 ## Table of contents
 
-1. [Introduction](## 1. Introduction)
-2. [Working principle of particle system generator](## 2. Working principle of particle system generator)
-3. [Description of the software](## 3. Description of the software)
+1. [Introduction](#1. Introduction)
+2. [Working principle of particle system generator](#2. Working principle of particle system generator)
+3. [Description of the software](#3. Description of the software)
 
 ## 1. Introduction
 One of the problems faced by developers of systems for recognition of particles (their sizes and shapes) is the difficulty in assessing the quality of such recognition. The system, which is always able to give the final result, cannot determine how close it is to reality, since information about the system of tested particles is not known in advance. One obvious solution to the problem is to calibrate the system (and adjust recognition algorithms) on some reference material, and then use the calibrated system to recognize particles of the real material.
