@@ -73,17 +73,46 @@ After input shape parameters setting (step 1) and initial particle shape guess, 
 
 ## 3. Description of the software
 
+The main task of the particle system generator is the generation of artificial images with particles which distributions of shape parameters are known in advance. For convenience, the application is functionally divided into 4 parts (tools), each of which provides a part of the functionality, either to work out any specific algorithms or directly to generate the final images. Table 1 provides information on the developed tools with the necessary explanations. Figures 5 - 9 demonstrates the GUIs of the application tools.
+
+**Table 1.** Tools of the developed particle system generator.
+
+| № | Name of the tool | Name of the tool |
+|---|---|---|
+| 1 | Particle tester tool | Using for test of the different algorithms of determination of irregular shape parameters such as circularity, convexity, elongation and others. |
+| 2 | Particle finder tool | Provides functionality of the search algorithm (Particle swart optimization) for searching the particle shape with the desired shape parameters. The algorithm is solving so called the reverse problem. |
+| 3 | Particles generator tool | Using the functionality of the first two tools this tool is able to generate the desired amount of irregular shape particles which distributions of shape parameters if known in advance. |
+| 4 | Pictures render tool | Using the data about particles generated with particle generated tool, this tool is able to render the set of final pictures with desired size, scale, colors and blur. |
+
+
+
+
+
+
+
+
 
 
 
 
 ## 4. Used technologies
 
+The application was developed mainly using Python 3.7. Table 2 contains the most important libraries used for creating the functionality of the application. The modules that requires to produce heavy calculations was written in C. 
+
 ## 5. Documentstion
 
 ## 6. Install from source
 
-## 7. Project Organization
+
+
+
+
+## 7. Examples of render capabilities of generated particle systems
+
+
+
+
+
 
 
 ## 8. Plans for the application development
