@@ -8,15 +8,15 @@
 ## 1. Introduction
 One of the problems faced by developers of systems for recognition of particles (their sizes and shapes) is the difficulty in assessing the quality of such recognition. The system, which is always able to give the final result, cannot determine how close it is to reality, since information about the system of tested particles is not known in advance. One obvious solution to the problem is to calibrate the system (and adjust recognition algorithms) on some reference material, and then use the calibrated system to recognize particles of the real material.<br>
 
-The creation of reference materials with, for example, spherical particles of medium size can be solved and quite often is already used to test the behavior of systems that make particle recognition. But such task becomes significantly complicated when it is necessary to create spherical particles of micron-level size, or when it is necessary to obtain a mixture from many particles, where the shape parameters would be distributed according to a known law. If it is necessary to create particles of irregular shape, and even so that the shape parameters would be distributed according to a law known in advance, then the task becomes practically impossible. Therefore, to test algorithms for the recognition of particles of irregular shapes, it is necessary to use other approaches, one of which is, for instance, the creation of artificial images with the particle size and shape distributions as we need.
+The creation of reference materials with, for example, spherical particles of medium size can be solved and quite often is already used to test the behavior of systems that make particle recognition. But such task becomes significantly complicated when it is necessary to create spherical particles of micron-level size, or when it is necessary to obtain a mixture from many particles, where the shape parameters would be distributed according to a known law. If it is necessary to create particles of irregular shape, and even so that the shape parameters would be distributed according to a law known in advance, then the task becomes practically impossible. Therefore, to test algorithms for the recognition of particles of irregular shapes, it is necessary to use other approaches, one of which is, for instance, the creation of artificial pictures with the particle size and shape distributions as we need.
 
 <p align="center">
 <img src="/Images for GitHub/Fig 01. Idea of particle system generation.png" alt="Idea of particle system generation" width=788px>
 </p>
 
-**Fig.1.** Graphical representation of the idea of creation of images with generated particle system.
+**Fig.1.** Graphical representation of the idea of creation of pictures with generated particle system.
 
-Developed application with graphical user interface (GUI) is trying to solve the problem. It is designed to create images with artificially generated 2D particles. An important feature of such particle generation is that particles are generated in accordance with desired and predefined distribution of sizes and shape parameters (PSD, Circularity, Convexity and Elongation).
+Developed application with graphical user interface (GUI) is trying to solve the problem. It is designed to create pictures with artificially generated 2D particles. An important feature of such particle generation is that particles are generated in accordance with desired and predefined distribution of sizes and shape parameters (PSD, Circularity, Convexity and Elongation).
 
 ## 2. Working principle of particle system generator
 ### 2.1. Representation of the irregular shape particles 
@@ -73,35 +73,64 @@ After input shape parameters setting (step 1) and initial particle shape guess, 
 
 ## 3. Description of the software
 
-The main task of the particle system generator is the generation of artificial images with particles which distributions of shape parameters are known in advance. For convenience, the application is functionally divided into 4 parts (tools), each of which provides a part of the functionality, either to work out any specific algorithms or directly to generate the final images. Table 1 provides information on the developed tools with the necessary explanations. Figures 5 - 9 demonstrates the GUIs of the application tools.
+The main task of the particle system generator is the generation of artificial pictures with particles which distributions of shape parameters are known in advance. For convenience, the application is functionally divided into 4 parts (tools), each of which provides a part of the functionality, either to work out any specific algorithms or directly to generate the final pictures. Table 1 provides information on the developed tools with the necessary explanations. Figures 5 - 10 demonstrates the GUIs of the application tools.
 
 **Table 1.** Tools of the developed particle system generator.
 
-| № | Name of the tool | Name of the tool |
+| № | Name of the tool | Additional information |
 |---|---|---|
 | 1 | Particle tester tool | Using for test of the different algorithms of determination of irregular shape parameters such as circularity, convexity, elongation and others. |
 | 2 | Particle finder tool | Provides functionality of the search algorithm (Particle swart optimization) for searching the particle shape with the desired shape parameters. The algorithm is solving so called the reverse problem. |
 | 3 | Particles generator tool | Using the functionality of the first two tools this tool is able to generate the desired amount of irregular shape particles which distributions of shape parameters if known in advance. |
 | 4 | Pictures render tool | Using the data about particles generated with particle generated tool, this tool is able to render the set of final pictures with desired size, scale, colors and blur. |
 
+<p align="center">
+<img src="/Images for GitHub/Fig 05. MainWindow.png" alt="MainWindow interface" width=414px>
+</p>
 
+**Fig.5.** Main window of the particles system generator with set of tools.
 
+<p align="center">
+<img src="/Images for GitHub/Fig 06. ParticleTester interface.png" alt="ParticleTester interface" width=743px>
+</p>
 
+**Fig.6.** Window of the particle tester tool.
 
+<p align="center">
+<img src="/Images for GitHub/Fig 07. Real particle image loader.png" alt="Real particle image loader" width=869px>
+</p>
 
+**Fig.7.** Window of the real particle image loader of the particle tester tool.
 
+<p align="center">
+<img src="/Images for GitHub/Fig 08. ParticleFinder interface.png" alt="ParticleFinder interface" width=1034px>
+</p>
 
+**Fig.8.** Window of the particle finder tool.
 
+<p align="center">
+<img src="/Images for GitHub/Fig 09. ParticlesGenerator interface.png" alt="ParticlesGenerator interface" width=588px>
+</p>
 
+**Fig.9.** Window of the particle system generator tool.
 
+<p align="center">
+<img src="/Images for GitHub/Fig 10. PicturesRender interface.png" alt="PicturesRender interface" width=588px>
+</p>
+
+**Fig.10.** Window of the pictures render tool.
 
 ## 4. Used technologies
 
-The application was developed mainly using Python 3.7. Table 2 contains the most important libraries used for creating the functionality of the application. The modules that requires to produce heavy calculations was written in C. 
+The application was developed mainly using Python 3.7.The most important libraries used for creating the functionality of the application are the fillowing: PyQt5, Matplotlib, Numpy, Openpyxl, Pillow. The modules that requires to produce heavy calculations were written in C. 
 
 ## 5. Documentstion
 
+Documentation for every tool can be found in _Help_ folder as a set of pdf files. Documentation for each specific tool can be opened using the menu: _Info_ -> _Help_.
+
 ## 6. Install from source
+
+
 
 
 
