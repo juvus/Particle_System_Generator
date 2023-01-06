@@ -229,4 +229,4 @@ Using render settings the pictures render tool has many opportunities to render 
 **Fig.16.** Example of pictures without the scale in the bottom (A) and with the scale (B). Enlarged part with the scale is shown in (C). The solidity here is a ratio between area occupied by particles and area of the picture (on pix or μm).
 
 ## 8. Licence
-Traffic light simulator code in this project is available under the `GPLv3` license. You can find the license file here: [LICENSE](/LICENSE)
+Particle system generator application code in this project is available under the `GPLv3` license. You can find the license file here: [LICENSE](/LICENSE)
