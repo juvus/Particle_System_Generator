@@ -2,10 +2,10 @@
 ## Table of contents
 
 1. [Introduction](#1-Introduction)
-2. [Working principle of particle system generator](#2-Working-principle-of-particle-system-generator)
-    2.1. [Representation of the irregular shape particles](#21-representation-of-the-irregular-shape-particles)
-    2.2. [Particle shape parameters](#22-particle-shape-parameters)
-    2.3. [Direct and inverse calculation problems](#23-direct-and-inverse-calculation-problems)
+2. [Working principle of particle system generator](#2-Working-principle-of-particle-system-generator)<br>
+    2.1. [Representation of the irregular shape particles](#21-representation-of-the-irregular-shape-particles)<br>
+    2.2. [Particle shape parameters](#22-particle-shape-parameters)<br>
+    2.3. [Direct and inverse calculation problems](#23-direct-and-inverse-calculation-problems)<br>
     2.4. [General algorithm for particles generation](#24-general-algorithm-for-particles-generation)
 3. [Description of the software](#3-description-of-the-software)
 4. [Used technologies](#4-used-technologies)
