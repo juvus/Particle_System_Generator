@@ -3,7 +3,22 @@
 
 1. [Introduction](#1-Introduction)
 2. [Working principle of particle system generator](#2-Working-principle-of-particle-system-generator)
+    2.1. [Representation of the irregular shape particles](#21-representation-of-the-irregular-shape-particles)
+    2.2. [Particle shape parameters](#22-particle-shape-parameters)
+    2.3. [Direct and inverse calculation problems](#23-direct-and-inverse-calculation-problems)
+    2.4. [General algorithm for particles generation](#24-general-algorithm-for-particles-generation)
 3. [Description of the software](#3-description-of-the-software)
+4. [Used technologies](#4-used-technologies)
+5. [Documentation](#5-documentation)
+6. [Installation guide](#6-installation-guide)
+7. [Examples of render capabilities of generated particle systems](#7-examples-of-render-capabilities-of-generated-particle-systems)
+    7.1. [Different number of particles per single picture](#71-different-number-of-particles-per-single-picture)
+    7.2. [Different picture scales](#72-different-picture-scales)
+    7.3. [Different picture colors](#73-different-picture-colors)
+    7.4. [Different particle blurs](#74-different-particle-blurs)
+    7.5. [Particles overlap simulation](#75-particles-overlap-simulation)
+    7.6. [Scale drawing option](#76-scale-drawing-option)
+8. [Licence](#8-licence)
 
 ## 1. Introduction
 One of the problems faced by developers of systems for recognition of particles (their sizes and shapes) is the difficulty in assessing the quality of such recognition. The system, which is always able to give the final result, cannot determine how close it is to reality, since information about the system of tested particles is not known in advance. One obvious solution to the problem is to calibrate the system (and adjust recognition algorithms) on some reference material, and then use the calibrated system to recognize particles of the real material.<br>
@@ -124,7 +139,7 @@ The main task of the particle system generator is the generation of artificial p
 
 The application was developed mainly using Python 3.7.The most important libraries used for creating the functionality of the application are the fillowing: PyQt5, Matplotlib, Numpy, Openpyxl, Pillow. The modules that requires to produce heavy calculations were written in C. 
 
-## 5. Documentstion
+## 5. Documentation
 
 Documentation for every tool can be found in _Help_ folder as a set of pdf files. Documentation for each specific tool can be opened using the menu: _Info_ -> _Help_.
 
@@ -204,7 +219,7 @@ Using render settings the pictures render tool has many opportunities to render 
 
 **Fig.13.** Example of pictures with different colors of background and particles.
 
-### 7.4. Different particles blur
+### 7.4. Different particle blurs
 
 <p align="center">
 <img src="/Images for GitHub/Fig 14. Render. Different particle blurs.png" alt="Render. Different particle blurs" width=757px>
