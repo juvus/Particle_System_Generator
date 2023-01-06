@@ -11,12 +11,12 @@
 4. [Used technologies](#4-used-technologies)
 5. [Documentation](#5-documentation)
 6. [Installation guide](#6-installation-guide)
-7. [Examples of render capabilities of generated particle systems](#7-examples-of-render-capabilities-of-generated-particle-systems)
-    7.1. [Different number of particles per single picture](#71-different-number-of-particles-per-single-picture)
-    7.2. [Different picture scales](#72-different-picture-scales)
-    7.3. [Different picture colors](#73-different-picture-colors)
-    7.4. [Different particle blurs](#74-different-particle-blurs)
-    7.5. [Particles overlap simulation](#75-particles-overlap-simulation)
+7. [Examples of render capabilities of generated particle systems](#7-examples-of-render-capabilities-of-generated-particle-systems)<br>
+    7.1. [Different number of particles per single picture](#71-different-number-of-particles-per-single-picture)<br>
+    7.2. [Different picture scales](#72-different-picture-scales)<br>
+    7.3. [Different picture colors](#73-different-picture-colors)<br>
+    7.4. [Different particle blurs](#74-different-particle-blurs)<br>
+    7.5. [Particles overlap simulation](#75-particles-overlap-simulation)<br>
     7.6. [Scale drawing option](#76-scale-drawing-option)
 8. [Licence](#8-licence)
 
