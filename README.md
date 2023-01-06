@@ -128,23 +128,105 @@ The application was developed mainly using Python 3.7.The most important librari
 
 Documentation for every tool can be found in _Help_ folder as a set of pdf files. Documentation for each specific tool can be opened using the menu: _Info_ -> _Help_.
 
-## 6. Install from source
+## 6. Installation guide
 
+To install and succesfully run the program the following should be done (assuming that application is installed in D:\Projects\Particle_System_Generator):
 
+1) Install MSYS2, gcc:
+https://www.msys2.org/
 
+2) Compile some modules for particles generator:
+```
+> cd D:\Projects\Particle_System_Generator\Modules\Generator_c
+> mingw32-make
+```
 
+3) Install anaconda environment
+https://www.anaconda.com/products/individual
 
+4) Create prts_sys_gen virtual environment:
+```
+> conda create --name prts_sys_gen
+```
 
+5) Activate the environment:
+```
+> conda activate prts_sys_gen
+```
+
+6) Change directory to that with program code
+```
+> cd D:\Projects\Particle_System_Generator 
+```
+
+7) Install the python (3.7 version)
+```
+> conda install python=3.7
+```
+
+8) Install the required libraries (listed in file requirements.txt)
+```
+> pip install -r requirements.txt
+```
+
+9) Run the software
+```
+> python Run.py
+```
 
 ## 7. Examples of render capabilities of generated particle systems
 
+During the development of the particles system generator software, a separation in functionality was made between the particles generation and it’s rendering so that already generated particle data (generation of particles may take considerable time especially when a huge number of particles are generated) can be used in multiple renders of such pictures that are needed at the current moment. Rendering of pictures takes significantly less time than generation a particles system.<br>
 
+Using render settings the pictures render tool has many opportunities to render exactly those pictures that we need. Various possible options with examples are presented below.
 
+### 7.1. Different number of particles per single picture
 
+<p align="center">
+<img src="/Images for GitHub/Fig 11. Render. Different particles number per single picture.png" alt="Render. Different particles number per single picture" width=755px>
+</p>
 
+**Fig.11.** Example of different particles number per single rendered picture. A –100 part.; B - 500 part., C – 1000 part.
 
+### 7.2. Different picture scales
 
-## 8. Plans for the application development
+<p align="center">
+<img src="/Images for GitHub/Fig 12. Render. Different picture scales.png" alt="Render. Different picture scales" width=757px>
+</p>
 
-## 9. Licence
+**Fig.12.** Example of pictures that contain 500 particles in different scales. A – 0.1 μm/pix; B – 0.2 μm/pix, C – 0.4 μm/pix
+
+### 7.3. Different picture colors
+
+<p align="center">
+<img src="/Images for GitHub/Fig 13. Render. Different picture colors.png" alt="Render. Different picture colors" width=765px>
+</p>
+
+**Fig.13.** Example of pictures with different colors of background and particles.
+
+### 7.4. Different particles blur
+
+<p align="center">
+<img src="/Images for GitHub/Fig 14. Render. Different particle blurs.png" alt="Render. Different particle blurs" width=757px>
+</p>
+
+**Fig.14.** Example of pictures with different particles blur. A – blur particles 0%, blur value 0%; B – blur particles 50%, blur value 50%; C – blur particles 100%, blur value 100%.
+
+### 7.5. Particles overlap simulation
+
+<p align="center">
+<img src="/Images for GitHub/Fig 15. Render. Particles overlap simulation.png" alt="Render. Particles overlap simulation" width=510px>
+</p>
+
+**Fig.15.** Example of pictures with disabled (A) and enabled (B) option of particles overlap.
+
+### 7.6. Scale drawing option
+
+<p align="center">
+<img src="/Images for GitHub/Fig 16. Render. Scale drawing option.png" alt="Render. Scale drawing option" width=693px>
+</p>
+
+**Fig.16.** Example of pictures without the scale in the bottom (A) and with the scale (B). Enlarged part with the scale is shown in (C). The solidity here is a ratio between area occupied by particles and area of the picture (on pix or μm).
+
+## 8. Licence
 Traffic light simulator code in this project is available under the `GPLv3` license. You can find the license file here: [LICENSE](/LICENSE)
