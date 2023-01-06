@@ -151,6 +151,7 @@ To install and succesfully run the program the following should be done (assumin
 https://www.msys2.org/
 - Compile some modules for particles generator:
 ```
+$ cd D:\Projects
 $ git clone https://github.com/juvus/Particle_System_Generator.git
 $ cd D:\Projects\Particle_System_Generator\Modules\Generator_c
 $ mingw32-make
