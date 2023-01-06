@@ -151,34 +151,35 @@ To install and succesfully run the program the following should be done (assumin
 https://www.msys2.org/
 - Compile some modules for particles generator:
 ```
-> cd D:\Projects\Particle_System_Generator\Modules\Generator_c
-> mingw32-make
+$ git clone https://github.com/juvus/Particle_System_Generator.git
+$ cd D:\Projects\Particle_System_Generator\Modules\Generator_c
+$ mingw32-make
 ```
 - Install anaconda environment
 https://www.anaconda.com/products/individual
 - Create prts_sys_gen virtual environment:
 ```
-> conda create --name prts_sys_gen
+$ conda create --name prts_sys_gen
 ```
 - Activate the environment:
 ```
-> conda activate prts_sys_gen
+$ conda activate prts_sys_gen
 ```
 - Change directory to that with program code
 ```
-> cd D:\Projects\Particle_System_Generator 
+$ cd D:\Projects\Particle_System_Generator 
 ```
 - Install the python (3.7 version)
 ```
-> conda install python=3.7
+$ conda install python=3.7
 ```
 - Install the required libraries (listed in file requirements.txt)
 ```
-> pip install -r requirements.txt
+$ pip install -r requirements.txt
 ```
 - Run the software
 ```
-> python Run.py
+$ python Run.py
 ```
 
 ## 7. Examples of render capabilities of generated particle systems
