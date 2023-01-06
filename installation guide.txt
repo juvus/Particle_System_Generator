@@ -1,0 +1,29 @@
+To install and succesfully run the program the following should be done (assuming that application is installed in D:\Projects\Particle_System_Generator):
+
+1) Install MSYS2, gcc:
+https://www.msys2.org/
+
+2) Compile some modules for particles generator:
+> cd D:\Projects\Particle_System_Generator\Modules\Generator_c
+> mingw32-make
+
+3) Install anaconda environment
+https://www.anaconda.com/products/individual
+
+4) Create prts_sys_gen virtual environment:
+> conda create --name prts_sys_gen
+
+5) Activate the environment:
+> conda activate prts_sys_gen
+
+6) Change directory to that with program code
+> cd D:\Projects\Particle_System_Generator 
+
+7) Install the python (3.7 version)
+conda install python=3.7
+
+8) Install the required libraries (listed in file requirements.txt)
+pip install -r requirements.txt
+
+9) Run the software
+python Run.py
